@@ -1,0 +1,15 @@
+{
+  "name": "npm-openweather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kimchikimchi",
+  "license": "ISC",
+  "dependencies": {
+    "express_kimchikimchi": "^1.0.0"
+  }
+}
