@@ -7,7 +7,19 @@ const app = require("express_kimchikimchi");
 const PORT = process.env.PORT || 3000;
 
 
-let cities = ['Atlanta', 'New York', "Los Angeles"];
+let cities = [
+    {
+        1: {
+            city: 'Atlanta',
+            unit: 'imperial'
+        }
+    },
+    {
+
+    },
+    {
+
+    }]; 'Atlanta', 'New York', "Los Angeles"];
 //- GET using "api/weather" as the path will return a list of weather data for the cities in the current list/array with their weather data
 
 // This is our API key

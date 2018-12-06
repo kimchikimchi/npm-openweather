@@ -1,20 +1,23 @@
 {
   "name": "npm-openweather",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is description",
+  "main": "node.js",
+  "config": {
+    "auditbuild_script": "./auditbuild.sh"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon ./index.js",
-    "printinfo": " ",
-    "clean": " ",
-    "build": " ",
-    "watch": " ",
-    "audit": " ",
-    "prod": " ",
-    "node4": " ",
-    "node6": " ",
-    "node8": " "
+    "start": "node $npm_package_main",
+    "printinfo": "echo $npm_package_description",
+    "clean": "rm -rf ./node_modules",
+    "build": "npm install",
+    "watch": "npx nodemon $npm_package_main",
+    "audit": "npm audit",
+    "auditbuild": "$npm_package_config_auditbuild_script",
+    "prod": "npm run clean && npm run build && npm start",
+    "node4": "npx node@4 $npm_package_main",
+    "node6": "npx node@6 $npm_package_main",
+    "node8": "npx node@8 $npm_package_main"
   },
   "keywords": [],
   "author": "kimchikimchi",
